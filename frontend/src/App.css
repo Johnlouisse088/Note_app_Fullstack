@@ -14,7 +14,7 @@
     --color-border: #e0e3e6;
 }
 
-.dark {
+/* .dark {
     --color-main: #f68657;
     --color-text: #d6d1d1;
     --color-dark: #f5f6f7;
@@ -23,6 +23,17 @@
     --color-lighter: #292a2c;
     --color-white: #2e3235;
     --color-border: #252629;
+} */
+
+.dark {
+    --color-main: #9A4EAE;
+    --color-text: white;
+    --color-dark: #f5f6f7;
+    --color-gray: rgba(154, 78, 174, .7);
+    --color-bg: #1f2124;
+    --color-lighter: #9A4EAE;
+    --color-white: #2e3235;
+    --color-border: #9A4EAE;
 }
 
 /* BASE STYLES */
@@ -65,9 +76,10 @@ a {
 .app {
     width: 100%;
     max-width: 480px;
-    height: 88vh;
-    margin: 0 auto;
+    height: 90%;
+    margin: 50px auto;
     background-color: var(--color-white);
+    border: .1px solid #9A4EAE;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.05);
     position: relative;
 }
@@ -143,7 +155,7 @@ a {
 }
 
 .notes__list__item {
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: .8px solid var(--color-border);
     margin-bottom: 12px;
     padding: 8px 16px;
     transition: all 0.2s ease-in-out;
@@ -156,8 +168,9 @@ a {
 
 .notes__list__item h3,
 .notes__list__item p span {
-    font-weight: 600;
+    font-weight: 550;
 }
+
 
 
 .notes__list__item p span {
